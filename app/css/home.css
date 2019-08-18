@@ -1,0 +1,93 @@
+body {
+	background-color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: white;
+}
+
+input {
+	color: white;
+}
+
+.px1 {
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+
+.px2 {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.px3 {
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.px4 {
+	padding-left: 4rem;
+	padding-right: 4rem;
+}
+
+.px5 {
+	padding-left: 8rem;
+	padding-right: 8rem;
+}
+
+.px6 {
+	padding-left: 16rem;
+	padding-right: 16rem;
+}
+
+.py1 {
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+.py2 {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.py3 {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+.py4 {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+
+.py5 {
+	padding-top: 8rem;
+	padding-bottom: 8rem;
+}
+
+.py6 {
+	padding-top: 16rem;
+	padding-bottom: 16rem;
+}
+
+.logo-text {
+	font-family: reross-quadratic, sans-serif;
+}
+
+.center-text {
+	text-align: center;
+}
+
+.header {
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.email-input {
+	background-color: black !important;
+	border: none !important;
+}

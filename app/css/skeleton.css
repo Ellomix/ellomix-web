@@ -23,6 +23,7 @@
 - Utilities
 - Clearing
 - Media Queries
+- Responsive
 */
 
 
@@ -416,3 +417,26 @@ there.
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
+/* Responsive
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (min-width: 400px) {
+  .hide-gt-mobile { visibility: hidden; }
+}
+
+@media (min-width: 550px) {
+  .hide-gt-phablet { visibility: hidden; }
+}
+
+@media (min-width: 750px) {
+  .hide-gt-tablet { visibility: hidden; }
+}
+
+@media (min-width: 1000px) {
+  .hide-gt-desktop { visibility: hidden; }
+}
+
+@media (min-width: 1200px) {
+  .hide-gt-dektop-hd { visibility: hidden; }
+}

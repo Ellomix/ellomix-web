@@ -422,21 +422,41 @@ there.
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 @media (min-width: 400px) {
-  .hide-gt-mobile { visibility: hidden; }
+  .hide-gt-mobile { display: none; }
 }
 
 @media (min-width: 550px) {
-  .hide-gt-phablet { visibility: hidden; }
+  .hide-gt-phablet { display: none; }
 }
 
 @media (min-width: 750px) {
-  .hide-gt-tablet { visibility: hidden; }
+  .hide-gt-tablet { display: none; }
 }
 
 @media (min-width: 1000px) {
-  .hide-gt-desktop { visibility: hidden; }
+  .hide-gt-desktop { display: none; }
 }
 
 @media (min-width: 1200px) {
-  .hide-gt-dektop-hd { visibility: hidden; }
+  .hide-gt-dektop-hd { display: none; }
+}
+
+@media (max-width: 400px) {
+  .hide-lt-mobile { display: none; }
+}
+
+@media (max-width: 550px) {
+  .hide-lt-phablet { display: none; }
+}
+
+@media (max-width: 750px) {
+  .hide-lt-tablet { display: none; }
+}
+
+@media (max-width: 1000px) {
+  .hide-lt-desktop { display: none; }
+}
+
+@media (max-width: 1200px) {
+  .hide-lt-dektop-hd { display: none; }
 }

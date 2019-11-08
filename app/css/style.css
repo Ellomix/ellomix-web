@@ -7,7 +7,6 @@ html {
 
 body {
 	position: relative;
-	background-color: black;
 	min-height: 100%;
 }
 
@@ -16,6 +15,10 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 input {
+	color: white;
+}
+
+input::placeholder {
 	color: white;
 }
 
@@ -56,7 +59,8 @@ a:hover {
 }
 
 .email-input {
-	background-color: black !important;
+	background: transparent !important;
+	color: white;
 	border: none !important;
 }
 
@@ -112,6 +116,15 @@ a:hover {
 
 .section {
 	height: 100vh;
+}
+
+.bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -10;
 }
 
 /* Padding

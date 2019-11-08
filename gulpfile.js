@@ -54,6 +54,11 @@ gulp.task('images', function() {
     .pipe(gulp.dest('dist/img'))
 });
 
+gulp.task('videos', function() {
+  gulp.src('app/img/*.+(mov)')
+    .pipe(gulp.dest('dist/img'))
+});
+
 gulp.task('html', function() {
   gulp.src(['app/**/*.html'])
   		.pipe(htmlmin({
@@ -83,4 +88,4 @@ gulp.task('clean:dist', function() {
 
 // Build Sequences
 
-gulp.task('default', ['clean:dist', 'html', 'templates', 'css', 'images', 'js', 'connect', 'watch']);
+gulp.task('default', ['clean:dist', 'html', 'templates', 'css', 'images', 'videos', 'js', 'connect', 'watch']);

@@ -39,14 +39,23 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <!-- Mobile -->
   <div class="hide-gt-tablet">
-    <div class="row nav py3">
+    <div class="side-nav">
+      <div class="row right-text">
+        <img src="img/close.png" onclick="closeNav()" alt="close" width="25px" height="25px" class="close">
+      </div>
+      <div class="row">
+        <a href="#about" data-goto="about" class="px3">about</a>
+      </div>
+    </div>
+    <div class="row py3">
+      <img src="img/ellipse.png" onclick="openNav()" alt="navigation" width="25px" height="25px" class="ellipse">
       <a href="#" data-goto="home"><h1 class="center-text logo-text">ellomix</h1></a>
     </div>
   </div>
 
   <!-- Desktop -->
   <div class="hide-lt-tablet">
-    <div class="row nav py3">
+    <div class="row top-nav py3">
       <div class="one-third column pl3 pt2">
         <a href="https://www.facebook.com/ellomixmusic/" target="_blank">
           <img src="img/facebook.png" alt="facebook" width="25px" height="25px" class="px1">

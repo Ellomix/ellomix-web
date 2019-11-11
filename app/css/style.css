@@ -71,7 +71,39 @@ a:hover {
   left: 0;
 }
 
-.nav .menu a {
+.ellipse {
+	float: left;
+	position: fixed;
+	padding-top: 1.5rem;
+	padding-left: 2.5rem;
+}
+
+.close {
+	padding-left: 2rem;
+	padding-right: 2rem;
+	padding-top: 3rem;
+	padding-bottom: 2rem;
+}
+
+.side-nav {
+	height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow-x: hidden;
+}
+
+.side-nav a {
+  color: white;
+  font-weight: 500;
+	font-size: 2rem;
+  transition: 0.3s;
+}
+
+.top-nav .menu a {
 	color: white;
 	font-weight: 500;
 	font-size: 1.8rem;

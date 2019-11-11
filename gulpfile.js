@@ -35,7 +35,8 @@ gulp.task('js', function() {
 		.pipe(concat('main.min.js'))
 		.pipe(uglify())
 		.pipe(sourcemaps.write())
-		.pipe(gulp.dest('dist/js'));
+		.pipe(gulp.dest('dist/js'))
+    .pipe(connect.reload());
 });
 
 gulp.task('css', function() {

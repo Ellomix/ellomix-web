@@ -90,3 +90,4 @@ gulp.task('clean:dist', function() {
 // Build Sequences
 
 gulp.task('default', ['clean:dist', 'html', 'templates', 'css', 'images', 'videos', 'js', 'connect', 'watch']);
+gulp.task('build', ['clean:dist', 'html', 'templates', 'css', 'images', 'videos', 'js']);

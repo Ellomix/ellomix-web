@@ -56,7 +56,7 @@ gulp.task('images', function() {
 });
 
 gulp.task('videos', function() {
-  gulp.src('app/img/*.+(mov)')
+  gulp.src('app/img/*.+(mp4)')
     .pipe(gulp.dest('dist/img'))
 });
 

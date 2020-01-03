@@ -81,6 +81,7 @@ a:hover {
 	position: fixed;
 	padding-top: 1.5rem;
 	padding-left: 2.5rem;
+	z-index: 1;
 }
 
 .close {
@@ -94,10 +95,10 @@ a:hover {
 	height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
   overflow-x: hidden;
 }
 
@@ -152,11 +153,23 @@ a:hover {
 }
 
 .polaroid {
-	width: 400px;
+	width: 250px;
+}
+
+@media (min-width: 550px) {
+  .polaroid {
+  	width: 300px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .polaroid {
+  	width: 400px;
+  }
 }
 
 .section {
-	height: 100vh;
+	height: 85vh;
 }
 
 .bg-video {
@@ -166,6 +179,14 @@ a:hover {
   min-width: 100%;
   min-height: 100%;
   z-index: -10;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.shown {
+	visibility: visible;
 }
 
 /*.bg-overlay {

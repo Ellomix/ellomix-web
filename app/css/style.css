@@ -111,24 +111,12 @@ a:hover {
 }
 
 .team-member {
-	position: relative;
-	display: inline-block;
-	height: 180px;
-	width: 180px;
+	width: 250px;
 }
 
 .team-link {
 	text-decoration: underline;
 	color: white;
-}
-
-.member-img {
-	height: 100%;
-	width: 100%;
-}
-
-.team-member:hover .member-img {
-	opacity: 0.5;
 }
 
 .overlay {
@@ -143,15 +131,11 @@ a:hover {
   transition: .3s ease;
 }
 
-.team-member:hover .overlay {
-  opacity: 1;
-}
-
 .polaroid {
 	width: 250px;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 900px) {
   .polaroid {
   	width: 300px;
   }

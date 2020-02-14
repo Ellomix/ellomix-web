@@ -1,9 +1,6 @@
 "use strict";
 
-var home       = 'home';
-var subscribed = 'subscribed';
-var about      = 'about';
-var team       = 'team';
+var home = 'home';
 
 window.onpopstate = function() {
 	loadPage();

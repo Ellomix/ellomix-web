@@ -31,6 +31,10 @@ a:hover {
 	color: white;
 }
 
+li {
+	color: white;
+}
+
 /* Theme
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -118,6 +122,11 @@ a:hover {
 .team-link {
 	text-decoration: underline;
 	color: white;
+}
+
+.privacy-link {
+	color: white;
+	font-size: 1.2rem;
 }
 
 .overlay {

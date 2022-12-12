@@ -50,7 +50,7 @@ gulp.task('css', function() {
 });
 
 gulp.task('images', function() {
-  gulp.src('app/img/*.+(png|jpg|gif|svg)')
+  gulp.src('app/img/**/*.+(png|jpg|gif|svg)')
     .pipe(cache(imagemin()))
     .pipe(gulp.dest('dist/img'))
 });

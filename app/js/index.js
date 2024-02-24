@@ -19,37 +19,19 @@ function loadPage() {
 	var hash = window.location.hash.slice(1).toLowerCase() || home;
 	var template = window.ellomix.templates[hash];
 
-	if (hash === 'apple-app-site-association') {
-		// Set Apple app site association links if loading that page
-		var links = {
-		    "applinks": {
-		        "apps": [],
-		        "details": [
-		            {
-		                "appID": "QFBNLQV3XJ.com.ellomix.dev",
-		                "paths": ["*"]
-		            }
-		        ]
-		    }
-		}
+	// Close side nav and set screen to the top
+	$('.side-nav').width(0);
+	window.scrollTo(0, 0);
 
-		$("body").empty()
-		$("body").append('<pre>' + JSON.stringify(links, undefined, 2) + '</pre>')
-	} else {
-		// Close side nav and set screen to the top
-		$('.side-nav').width(0);
-		window.scrollTo(0, 0);
+	// Remove hidden class on elements
+	$('#content').removeClass('hidden')
+	$('.ellipse').removeClass('hidden')
+	$('.logo-text').removeClass('hidden')
+	$('.footer').removeClass('hidden')
 
-		// Remove hidden class on elements
-		$('#content').removeClass('hidden')
-		$('.ellipse').removeClass('hidden')
-		$('.logo-text').removeClass('hidden')
-		$('.footer').removeClass('hidden')
-
-		// Set template HTML on content div
-		var contentDiv = $('#content');
-		contentDiv.html(template);
-	}
+	// Set template HTML on content div
+	var contentDiv = $('#content');
+	contentDiv.html(template);
 }
 
 function openNav() {

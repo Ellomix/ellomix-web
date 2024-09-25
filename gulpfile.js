@@ -84,6 +84,11 @@ function templates() {
     .pipe(browsersync.stream());
 }
 
+function aasa() {
+  return gulp.src('apple-app-site-association.json')
+    .pipe(gulp.dest('dist/.well-known'));
+}
+
 function clean() {
   return del(['dist']);
 }
@@ -100,5 +105,5 @@ exports.clean       = clean;
 
 // Build Sequences
 
-exports.default = gulp.series(clean, html, templates, css, images, videos, js, browserSync, watch);
-exports.build = gulp.series(clean, html, templates, css, images, videos, js);
+exports.default = gulp.series(clean, html, templates, css, images, videos, js, aasa, browserSync, watch);
+exports.build = gulp.series(clean, html, templates, css, images, videos, js, aasa);

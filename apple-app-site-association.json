@@ -1,8 +1,7 @@
 {
 	"applinks": {
-    "apps": [],
-    "details": [
-      {
+		"apps": [],
+		"details": [{
 				"appID": "QFBNLQV3XJ.com.ellomix.dev",
 				"paths": ["*"]
 			}
